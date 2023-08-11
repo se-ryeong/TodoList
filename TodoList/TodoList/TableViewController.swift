@@ -17,7 +17,6 @@ class Todo {
 }
 
 var items: [Todo] = []
-//var items = ["테스트1","테스트2"]
 
 
 class TableViewController: UITableViewController {
@@ -29,8 +28,7 @@ class TableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
+        
         //바 버튼으로 목록 삭제하기
         self.navigationItem.rightBarButtonItems?.append(editButtonItem)
     }
@@ -65,12 +63,10 @@ class TableViewController: UITableViewController {
     // MARK: - Table view data source
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1    //테이블 안에 섹션이 1개이므로 리턴값은 1
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return items.count
     }
     

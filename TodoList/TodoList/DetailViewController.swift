@@ -18,7 +18,6 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
         guard let item = receiveItem else { return }
         detailItem.text = item.content
     }

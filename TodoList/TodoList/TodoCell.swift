@@ -13,10 +13,7 @@ class TodoCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
         self.selectionStyle = .none
-        
-        
     }
     
     func configureCell(isCompleted: Bool) {
@@ -39,6 +36,6 @@ class TodoCell: UITableViewCell {
         return attributeString
     }
     
-    //시간 추가하려면 여기에 추ㅜㅜㅜ가하기 ......
+    //시간 추가하려면 여기에 추가하기
 
 }

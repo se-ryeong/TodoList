@@ -13,12 +13,11 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var DoneList: UIButton!
     
-    override func viewDidLoad()  {
+    override func viewDidLoad() {
         super.viewDidLoad()
 
         let tableVC = TableViewController()
         tableVC.modalPresentationStyle = .fullScreen
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func viewDoneList(_ sender: UIButton) {

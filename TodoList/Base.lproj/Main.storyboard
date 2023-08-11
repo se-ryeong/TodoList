@@ -65,7 +65,7 @@
             </objects>
             <point key="canvasLocation" x="667.93893129770993" y="93.661971830985919"/>
         </scene>
-        <!--Finish View Controller-->
+        <!--Done-List-->
         <scene sceneID="ugZ-KC-XwI">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p4z-Lo-NSk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -93,7 +93,7 @@
                         <viewLayoutGuide key="safeArea" id="yEF-M8-TrI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="cuf-Zw-Zpt"/>
+                    <navigationItem key="navigationItem" title="Done-List" id="cuf-Zw-Zpt"/>
                     <connections>
                         <outlet property="tableView" destination="kPn-ul-IIa" id="Q21-Gd-5BF"/>
                     </connections>
