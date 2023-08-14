@@ -13,6 +13,9 @@
 		C3CA90012A829A0900CE5064 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CA90002A829A0900CE5064 /* AddViewController.swift */; };
 		C3CA90032A84AEE100CE5064 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CA90022A84AEE100CE5064 /* HomeViewController.swift */; };
 		C3CA90072A84C86A00CE5064 /* FinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CA90062A84C86A00CE5064 /* FinishViewController.swift */; };
+		C3CA90102A85FD6900CE5064 /* TodoList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3CA900F2A85FD6900CE5064 /* TodoList.storyboard */; };
+		C3CA90122A85FD7700CE5064 /* DetailView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3CA90112A85FD7700CE5064 /* DetailView.storyboard */; };
+		C3CA90142A85FD8100CE5064 /* DoneList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3CA90132A85FD8100CE5064 /* DoneList.storyboard */; };
 		C3CD7FC42A793A8A00F1868E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CD7FC32A793A8A00F1868E /* AppDelegate.swift */; };
 		C3CD7FC62A793A8A00F1868E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CD7FC52A793A8A00F1868E /* SceneDelegate.swift */; };
 		C3CD7FCB2A793A8A00F1868E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3CD7FC92A793A8A00F1868E /* Main.storyboard */; };
@@ -27,6 +30,9 @@
 		C3CA90002A829A0900CE5064 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		C3CA90022A84AEE100CE5064 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C3CA90062A84C86A00CE5064 /* FinishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishViewController.swift; sourceTree = "<group>"; };
+		C3CA900F2A85FD6900CE5064 /* TodoList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TodoList.storyboard; sourceTree = "<group>"; };
+		C3CA90112A85FD7700CE5064 /* DetailView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailView.storyboard; sourceTree = "<group>"; };
+		C3CA90132A85FD8100CE5064 /* DoneList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DoneList.storyboard; sourceTree = "<group>"; };
 		C3CD7FC02A793A8A00F1868E /* TodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3CD7FC32A793A8A00F1868E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3CD7FC52A793A8A00F1868E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +72,7 @@
 		C3CA900B2A85EF5000CE5064 /* DoneList */ = {
 			isa = PBXGroup;
 			children = (
+				C3CA90132A85FD8100CE5064 /* DoneList.storyboard */,
 				C3CA90062A84C86A00CE5064 /* FinishViewController.swift */,
 			);
 			path = DoneList;
@@ -77,7 +84,9 @@
 				C3846EBD2A814247004FF04E /* TodoCell.swift */,
 				C3CA90002A829A0900CE5064 /* AddViewController.swift */,
 				C3846EB72A7B848F004FF04E /* DetailViewController.swift */,
+				C3CA90112A85FD7700CE5064 /* DetailView.storyboard */,
 				C3846EB52A7B845C004FF04E /* TableViewController.swift */,
+				C3CA900F2A85FD6900CE5064 /* TodoList.storyboard */,
 			);
 			path = TodoList;
 			sourceTree = "<group>";
@@ -180,8 +189,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3CA90102A85FD6900CE5064 /* TodoList.storyboard in Resources */,
 				C3CD7FD02A793A8B00F1868E /* LaunchScreen.storyboard in Resources */,
 				C3CD7FCD2A793A8B00F1868E /* Assets.xcassets in Resources */,
+				C3CA90122A85FD7700CE5064 /* DetailView.storyboard in Resources */,
+				C3CA90142A85FD8100CE5064 /* DoneList.storyboard in Resources */,
 				C3CD7FCB2A793A8A00F1868E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

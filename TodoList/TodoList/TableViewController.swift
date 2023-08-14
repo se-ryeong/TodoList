@@ -91,15 +91,14 @@ class TableViewController: UITableViewController {
      }
      */
     
-    
     // Override to support editing the table view. - 셀의 내용을 삭제하는 함수
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+
+        
         if editingStyle == .delete {
             // Delete the row from the data source
             items.remove(at: (indexPath as NSIndexPath).row)
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+           tableView.deleteRows(at: [indexPath], with: .fade)
         }
     }
     
@@ -115,7 +114,6 @@ class TableViewController: UITableViewController {
         items.remove(at: (fromIndexPath as NSIndexPath).row)  //이동할 아이템 삭제
         items.insert(itemToMove, at: (to as NSIndexPath).row)
         //삭제된 아이템을 이동할 위치로 삽입한다. 삽입한 아이템 뒤의 아이템들의 인덱스가 재정렬된다.
-        
     }
     
     /*
@@ -133,6 +131,7 @@ class TableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        
         if segue.identifier == "sgDetail" {
             let cell = sender as! UITableViewCell
             let indexPath = self.tvListView.indexPath(for: cell)
