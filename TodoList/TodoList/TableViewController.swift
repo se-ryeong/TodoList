@@ -30,7 +30,12 @@ class TableViewController: UITableViewController {
         super.viewDidLoad()
         
         if let data = defaults.object(forKey: "todo") as? Data {
-            let itemsArray = try! JSONDecoder().decode([Todo].self, from: data)
+            
+            //데이터 변환
+            guard let itemsArray = try? JSONDecoder().decode([Todo].self, from: data) else {
+                    return
+            }
+            
             items = itemsArray
             tableView.reloadData()
         }
@@ -53,9 +58,10 @@ class TableViewController: UITableViewController {
             guard let text = alert.textFields?[0].text else { return }
             items.append(Todo(content: text))
             
+            //데이터 변환
             let encoder = JSONEncoder()
-            let data = try! encoder.encode(items)
-            self.defaults.setValue(data, forKey: "todo")
+            let data = try? encoder.encode(items)
+            self.defaults.setValue(data, forKey: "todo")  //저장
             
             self.tableView.reloadData()
         })
