@@ -45,6 +45,10 @@
                                     <segue destination="Kra-Qh-wsQ" kind="push" id="TtU-sW-gRW"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YcD-yc-jsG">
+                                <rect key="frame" x="77" y="103" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ctd-cU-uxx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -53,6 +57,7 @@
                     <connections>
                         <outlet property="DoneList" destination="yBs-aH-0OT" id="zUv-1f-M9u"/>
                         <outlet property="MainTodo" destination="HPw-Cz-Aen" id="YJ0-0H-Bgj"/>
+                        <outlet property="imageView" destination="YcD-yc-jsG" id="EC2-EG-SMJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0BS-AV-cuk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

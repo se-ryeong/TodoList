@@ -17,7 +17,6 @@ class TodoCell: UITableViewCell {
     }
     
     
-    //삼항연산자로 바꾸기  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     func configureCell(isCompleted: Bool) {
         if isCompleted {
             checkBtn.setImage(UIImage(systemName: "checkmark.circle.fill"), for: .normal)
