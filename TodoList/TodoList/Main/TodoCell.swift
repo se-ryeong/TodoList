@@ -16,6 +16,10 @@ class TodoCell: UITableViewCell {
         self.selectionStyle = .none
     }
     
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        self.textLabel?.attributedText = nil
+    }
     
     func configureCell(isCompleted: Bool) {
         if isCompleted {
@@ -23,6 +27,7 @@ class TodoCell: UITableViewCell {
             textLabel?.textColor = .gray
             textLabel?.attributedText = strikeThrough()
         } else {
+            
             checkBtn.setImage(UIImage(systemName: "circle"), for: .normal)
             textLabel?.textColor = .black
             guard let text = textLabel?.text else { return }
@@ -32,7 +37,8 @@ class TodoCell: UITableViewCell {
     
     func strikeThrough() -> NSAttributedString{
         guard let text = textLabel?.text else { return  NSAttributedString() }
-        let attributeString: NSMutableAttributedString = NSMutableAttributedString(string: text)
+        let attributeString = NSMutableAttributedString(string: text)
+        
         attributeString.addAttribute(NSAttributedString.Key.strikethroughStyle, value: NSUnderlineStyle.single.rawValue, range: NSMakeRange(0, attributeString.length))
         return attributeString
     }

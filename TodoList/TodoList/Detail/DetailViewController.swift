@@ -8,30 +8,25 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-    
     var receiveItem: Todo?
-
-  //  let tableView = UITableView()
+    
+    //  let tableView = UITableView()
     
     @IBOutlet weak var detailItem: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         guard let item = receiveItem else { return }
         detailItem.text = item.content
     }
-
+    
     func receiveItem(_ item: Todo) {
         self.receiveItem = item
     }
     
-    
-    // MARK: - Navigation
+    @IBAction func changeCategory(_ sender: UIButton) {
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-  
     }
-    
-
+}
 
